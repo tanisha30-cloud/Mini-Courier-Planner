@@ -1,0 +1,41 @@
+\n========== MINI-COURIER PLANNER ==========
+Enter vehicle capacity in kg [18]: \n1) PRIORITIZED PARCELS (deadline ascending, priority descending)
+P02: Cyber Hub, deadline=1, priority=4, weight=6kg
+P10: IFFCO Chowk, deadline=1, priority=3, weight=3kg
+P06: Udyog Vihar, deadline=1, priority=2, weight=2kg
+P01: Sector 14, deadline=2, priority=5, weight=4kg
+P08: Sector 29, deadline=2, priority=5, weight=5kg
+P04: MG Road, deadline=2, priority=4, weight=5kg
+P07: DLF Phase 3, deadline=3, priority=4, weight=4kg
+P03: Sushant Lok, deadline=3, priority=3, weight=3kg
+P05: Sector 56, deadline=4, priority=5, weight=7kg
+P09: Palam Vihar, deadline=5, priority=3, weight=6kg
+\n2) OPTIMAL PACKING (0/1 Knapsack)
+P10: IFFCO Chowk, 3kg, value=70
+P08: Sector 29, 5kg, value=110
+P07: DLF Phase 3, 4kg, value=90
+P09: Palam Vihar, 6kg, value=130
+Total weight: 18/18 kg
+Total value: 400
+\n3) DELIVERY ROUTE (Nearest-Neighbor TSP + Dijkstra)
+Visit order: Warehouse -> DLF Phase 3 -> IFFCO Chowk -> Sector 29 -> Palam Vihar -> Warehouse
+Road path: Warehouse -> Udyog Vihar -> DLF Phase 3 -> Cyber Hub -> MG Road -> IFFCO Chowk -> Sector 29 -> Sector 14 -> Palam Vihar -> Udyog Vihar -> Warehouse
+Total route distance: 45.0 km
+\n4) PERFORMANCE TEST
+Runtime results saved to results/runtime_results.csv
+{'input_size': 10, 'merge_sort_ms': 0.0133, 'knapsack_ms': 0.0389, 'dijkstra_repetitions': 1, 'dijkstra_total_ms': 0.0103}
+{'input_size': 50, 'merge_sort_ms': 0.0743, 'knapsack_ms': 0.911, 'dijkstra_repetitions': 5, 'dijkstra_total_ms': 0.0351}
+{'input_size': 100, 'merge_sort_ms': 0.1708, 'knapsack_ms': 4.1441, 'dijkstra_repetitions': 10, 'dijkstra_total_ms': 0.0725}
+{'input_size': 250, 'merge_sort_ms': 0.4911, 'knapsack_ms': 28.5469, 'dijkstra_repetitions': 25, 'dijkstra_total_ms': 0.1928}
+{'input_size': 500, 'merge_sort_ms': 1.0286, 'knapsack_ms': 117.2719, 'dijkstra_repetitions': 50, 'dijkstra_total_ms': 0.3423}
+\nDone. See README.md and report.md for explanation.
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.

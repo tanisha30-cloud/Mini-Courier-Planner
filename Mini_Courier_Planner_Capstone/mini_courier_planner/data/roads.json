@@ -1,0 +1,97 @@
+{
+  "nodes": [
+    "Warehouse",
+    "Sector 14",
+    "Cyber Hub",
+    "Sushant Lok",
+    "MG Road",
+    "Sector 56",
+    "Udyog Vihar",
+    "DLF Phase 3",
+    "Sector 29",
+    "Palam Vihar",
+    "IFFCO Chowk"
+  ],
+  "edges": [
+    [
+      "Warehouse",
+      "Sector 14",
+      5
+    ],
+    [
+      "Warehouse",
+      "Udyog Vihar",
+      4
+    ],
+    [
+      "Sector 14",
+      "Cyber Hub",
+      6
+    ],
+    [
+      "Sector 14",
+      "Sector 29",
+      3
+    ],
+    [
+      "Cyber Hub",
+      "DLF Phase 3",
+      2
+    ],
+    [
+      "Cyber Hub",
+      "MG Road",
+      5
+    ],
+    [
+      "DLF Phase 3",
+      "Udyog Vihar",
+      4
+    ],
+    [
+      "DLF Phase 3",
+      "Sushant Lok",
+      6
+    ],
+    [
+      "MG Road",
+      "IFFCO Chowk",
+      3
+    ],
+    [
+      "IFFCO Chowk",
+      "Sector 29",
+      4
+    ],
+    [
+      "Sector 29",
+      "Sushant Lok",
+      5
+    ],
+    [
+      "Sushant Lok",
+      "Sector 56",
+      4
+    ],
+    [
+      "Sector 56",
+      "Palam Vihar",
+      8
+    ],
+    [
+      "Udyog Vihar",
+      "Palam Vihar",
+      7
+    ],
+    [
+      "Palam Vihar",
+      "Sector 14",
+      9
+    ],
+    [
+      "MG Road",
+      "Sector 56",
+      7
+    ]
+  ]
+}
